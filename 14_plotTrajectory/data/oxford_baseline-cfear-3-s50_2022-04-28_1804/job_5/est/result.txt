@@ -1,0 +1,11 @@
+Sequence-nr, 31 
+Trans.err.(%), 1.032 
+Rot.err.(deg/100m), 0.372 
+ATE(m), 19.120 
+RPE(m), 0.050 
+RPE-dev(m), 0.043 
+RPE(deg), 0.055 
+RPE-dev(deg), 0.061 
+bias-x(m), -0.007 
+bias-y(m), 0.001 
+bias-theta(deg), 0.001 

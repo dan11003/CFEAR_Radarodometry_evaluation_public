@@ -1,0 +1,78 @@
+range res, 0.0595238
+z min, 60
+min distance, 2.5
+max distance, 200
+k strongest, 40
+topic_filtered, /Navtech/Filtered
+radar_frameid, sensor_est
+dataset, mulran
+filter type, kstrong
+nb guard cells, 40
+window size, 1
+false alarm rate, 1
+input_points_topic, /Navtech/Filtered
+scan_registered_latest_topic, radar_registered
+scan_registered_keyframe_topic, radar_registered_keyframe
+odom_latest_topic, radar_odom
+odom_keyframe_topic, radar_odom_keyframe
+use raw pointcloud, false
+submap keyframes, 4
+resolution r,3
+resample factor f, 1
+min. sensor distance [m], 1.5
+min. sensor rot. [deg], 5
+use keyframe, true
+use initial guess, true
+radar reversed, true
+disable registration, false
+soft velocity constraint, false
+compensate, true
+cost type, P2P
+loss type, Huber
+loss limit, 0.100000
+covar scale, 1.000000
+regularization, 1.000000
+weight intensity, true
+publish_tf, true
+Weight, 4
+odom_est_topic, 
+gt_topic, 
+est_output_dir, /home/daniel/rosbag/CFEAR_EVAL/multi_2022-04-28_1703/mulran_baseline-cfear-3_2022-04-28_1857/job_6/est/
+gt_output_dir, /home/daniel/rosbag/CFEAR_EVAL/multi_2022-04-28_1703/mulran_baseline-cfear-3_2022-04-28_1857/job_6/gt/
+sequence, DCC03
+job nr, 6
+save pcd, 0
+method, baseline-cfear-3
+
+nr_frames, 2969
+publish_etc avg, 0.706683
+publish_etc dev [σ], 0.022749
+publish_etc count, 3001
+register avg, 20.956352
+register dev [σ], 45.713424
+register count, 3001
+build_normals avg, 3.868588
+build_normals dev [σ], 0.229713
+build_normals count, 3001
+Registration avg, 26.069494
+Registration dev [σ], 51.293461
+Registration count, 3002
+compensate avg, 0.513592
+compensate dev [σ], 0.002921
+compensate count, 3001
+itrs avg, 4.754748
+itrs dev [σ], 1.026823
+itrs count, 3001
+Surface points avg, 460.888075
+Surface points dev [σ], 11708.802929
+Surface points count, 3002
+velocity avg, 7.307130
+velocity dev [σ], 8.098749
+velocity count, 3001
+Filtered points avg, 12810.797468
+Filtered points dev [σ], 1575179.350720
+Filtered points count, 3002
+Filtering avg, 6.459725
+Filtering dev [σ], 1.435097
+Filtering count, 3002
+

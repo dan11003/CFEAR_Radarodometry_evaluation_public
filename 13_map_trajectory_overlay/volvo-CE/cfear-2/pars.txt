@@ -1,0 +1,78 @@
+range res, 0.175238
+z min, 70
+min distance, 2.5
+max distance, 200
+k strongest, 12
+topic_filtered, /Navtech/Filtered
+radar_frameid, sensor_est
+dataset, Volvo-CE
+filter type, kstrong
+nb guard cells, 12
+window size, 0
+false alarm rate, 1
+input_points_topic, /Navtech/Filtered
+scan_registered_latest_topic, radar_registered
+scan_registered_keyframe_topic, radar_registered_keyframe
+odom_latest_topic, radar_odom
+odom_keyframe_topic, radar_odom_keyframe
+use raw pointcloud, false
+submap keyframes, 3
+resolution r,3.5
+resample factor f, 1
+min. sensor distance [m], 1.5
+min. sensor rot. [deg], 5
+use keyframe, true
+use initial guess, true
+radar reversed, true
+disable registration, false
+soft velocity constraint, false
+compensate, true
+cost type, P2L
+loss type, Huber
+loss limit, 0.100000
+covar scale, 0.100000
+regularization, 1.000000
+weight intensity, true
+publish_tf, true
+Weight, 4
+odom_est_topic, 
+gt_topic, 
+est_output_dir, //home/daniel/rosbag/Volvo_CE/eval/2022-05-19_15:40/est/
+gt_output_dir, //home/daniel/rosbag/Volvo_CE/eval/2022-05-19_15:40/gt/
+sequence, Volvo_CE
+job nr, 1
+save pcd, 0
+method, cfear-x
+
+nr_frames, 0
+publish_etc avg, 0.731257
+publish_etc dev [σ], 0.027663
+publish_etc count, 4180
+Filtered points avg, 4532.582157
+Filtered points dev [σ], 26989.388431
+Filtered points count, 4181
+build_normals avg, 2.635725
+build_normals dev [σ], 0.175954
+build_normals count, 4180
+Registration avg, 23.371652
+Registration dev [σ], 31.666048
+Registration count, 4181
+velocity avg, 1.565765
+velocity dev [σ], 0.886615
+velocity count, 4180
+compensate avg, 0.313507
+compensate dev [σ], 0.002360
+compensate count, 4180
+Filtering avg, 3.949515
+Filtering dev [σ], 0.338921
+Filtering count, 4181
+Surface points avg, 333.321693
+Surface points dev [σ], 3592.847243
+Surface points count, 4181
+register avg, 19.673289
+register dev [σ], 28.823534
+register count, 4180
+itrs avg, 4.388756
+itrs dev [σ], 0.434754
+itrs count, 4180
+

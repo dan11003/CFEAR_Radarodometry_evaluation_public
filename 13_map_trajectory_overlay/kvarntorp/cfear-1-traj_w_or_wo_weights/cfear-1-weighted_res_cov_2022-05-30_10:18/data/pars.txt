@@ -1,0 +1,78 @@
+range res, 0.175238
+z min, 70
+min distance, 2.5
+max distance, 200
+k strongest, 12
+topic_filtered, /Navtech/Filtered
+radar_frameid, sensor_est
+dataset, kvarntorp
+filter type, kstrong
+nb guard cells, 12
+window size, 0
+false alarm rate, 1
+input_points_topic, /Navtech/Filtered
+scan_registered_latest_topic, radar_registered
+scan_registered_keyframe_topic, radar_registered_keyframe
+odom_latest_topic, radar_odom
+odom_keyframe_topic, radar_odom_keyframe
+use raw pointcloud, false
+submap keyframes, 1
+resolution r,3.5
+resample factor f, 1
+min. sensor distance [m], 1.5
+min. sensor rot. [deg], 5
+use keyframe, true
+use initial guess, true
+radar reversed, false
+disable registration, false
+soft velocity constraint, false
+compensate, true
+cost type, P2L
+loss type, Huber
+loss limit, 0.100000
+covar scale, 0.100000
+regularization, 1.000000
+weight intensity, true
+publish_tf, true
+Weight, 4
+odom_est_topic, 
+gt_topic, 
+est_output_dir, //home/daniel/rosbag/kvarntorp/eval/2022-05-30_10:18/est/
+gt_output_dir, //home/daniel/rosbag/kvarntorp/eval/2022-05-30_10:18/gt/
+sequence, 2020-09-18-14-38-03
+job nr, 1
+save pcd, 0
+method, cfear-x
+
+nr_frames, 0
+publish_etc avg, 0.331171
+publish_etc dev [σ], 0.006624
+publish_etc count, 3298
+Filtered points avg, 3286.874204
+Filtered points dev [σ], 35970.476143
+Filtered points count, 3299
+build_normals avg, 1.469538
+build_normals dev [σ], 0.048897
+build_normals count, 3298
+Registration avg, 4.615116
+Registration dev [σ], 0.922531
+Registration count, 3299
+velocity avg, 1.508124
+velocity dev [σ], 0.121741
+velocity count, 3298
+compensate avg, 0.232560
+compensate dev [σ], 0.001062
+compensate count, 3298
+Filtering avg, 4.048649
+Filtering dev [σ], 0.230411
+Filtering count, 3299
+Surface points avg, 135.847833
+Surface points dev [σ], 950.016251
+Surface points count, 3299
+register avg, 2.568301
+register dev [σ], 0.510994
+register count, 3298
+itrs avg, 4.033354
+itrs dev [σ], 0.037699
+itrs count, 3298
+
