@@ -1,0 +1,78 @@
+range res, 0.0595238
+z min, 60
+min distance, 2.5
+max distance, 200
+k strongest, 40
+topic_filtered, /Navtech/Filtered
+radar_frameid, sensor_est
+dataset, mulran
+filter type, kstrong
+nb guard cells, 40
+window size, 1
+false alarm rate, 0.1
+input_points_topic, /Navtech/Filtered
+scan_registered_latest_topic, radar_registered
+scan_registered_keyframe_topic, radar_registered_keyframe
+odom_latest_topic, radar_odom
+odom_keyframe_topic, radar_odom_keyframe
+use raw pointcloud, false
+submap keyframes, 50
+resolution r,3
+resample factor f, 1
+min. sensor distance [m], 1.5
+min. sensor rot. [deg], 5
+use keyframe, true
+use initial guess, true
+radar reversed, true
+disable registration, false
+soft velocity constraint, false
+compensate, true
+cost type, P2P
+loss type, Cauchy
+loss limit, 0.100000
+covar scale, 1.000000
+regularization, 0.100000
+weight intensity, true
+publish_tf, true
+Weight, 4
+odom_est_topic, 
+gt_topic, 
+est_output_dir, /home/daniel/rosbag/CFEAR_EVAL/multi_2022-04-28_1703/mulran_baseline-cfear-3-s50_2022-04-28_1940/job_6/est/
+gt_output_dir, /home/daniel/rosbag/CFEAR_EVAL/multi_2022-04-28_1703/mulran_baseline-cfear-3-s50_2022-04-28_1940/job_6/gt/
+sequence, DCC03
+job nr, 6
+save pcd, 0
+method, baseline-cfear-3-s50
+
+nr_frames, 2969
+publish_etc avg, 0.708876
+publish_etc dev [σ], 0.020591
+publish_etc count, 3001
+register avg, 243.006483
+register dev [σ], 9682.108276
+register count, 3001
+build_normals avg, 3.890663
+build_normals dev [σ], 0.209222
+build_normals count, 3001
+Registration avg, 248.076389
+Registration dev [σ], 9768.909154
+Registration count, 3002
+compensate avg, 0.515176
+compensate dev [σ], 0.002458
+compensate count, 3001
+itrs avg, 4.918361
+itrs dev [σ], 1.389203
+itrs count, 3001
+Surface points avg, 460.879747
+Surface points dev [σ], 11715.498864
+Surface points count, 3002
+velocity avg, 7.281737
+velocity dev [σ], 8.027818
+velocity count, 3001
+Filtered points avg, 12810.797468
+Filtered points dev [σ], 1575179.350720
+Filtered points count, 3002
+Filtering avg, 6.466737
+Filtering dev [σ], 1.240750
+Filtering count, 3002
+

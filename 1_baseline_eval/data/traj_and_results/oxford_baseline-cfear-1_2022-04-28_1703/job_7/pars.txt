@@ -1,0 +1,78 @@
+range res, 0.0438
+z min, 60
+min distance, 2.5
+max distance, 200
+k strongest, 12
+topic_filtered, /Navtech/Filtered
+radar_frameid, sensor_est
+dataset, oxford
+filter type, kstrong
+nb guard cells, 12
+window size, 1
+false alarm rate, 1
+input_points_topic, /Navtech/Filtered
+scan_registered_latest_topic, radar_registered
+scan_registered_keyframe_topic, radar_registered_keyframe
+odom_latest_topic, radar_odom
+odom_keyframe_topic, radar_odom_keyframe
+use raw pointcloud, false
+submap keyframes, 1
+resolution r,3.5
+resample factor f, 1
+min. sensor distance [m], 1.5
+min. sensor rot. [deg], 5
+use keyframe, true
+use initial guess, true
+radar reversed, false
+disable registration, false
+soft velocity constraint, false
+compensate, true
+cost type, P2L
+loss type, Huber
+loss limit, 0.100000
+covar scale, 1.000000
+regularization, 1.000000
+weight intensity, false
+publish_tf, true
+Weight, 4
+odom_est_topic, 
+gt_topic, 
+est_output_dir, /home/daniel/rosbag/CFEAR_EVAL/multi_2022-04-28_1703/oxford_baseline-cfear-1_2022-04-28_1703/job_7/est/
+gt_output_dir, /home/daniel/rosbag/CFEAR_EVAL/multi_2022-04-28_1703/oxford_baseline-cfear-1_2022-04-28_1703/job_7/gt/
+sequence, 2019-01-10-11-46-21-radar-oxford-10k
+job nr, 7
+save pcd, 0
+method, baseline-cfear-1
+
+nr_frames, 8865
+publish_etc avg, 0.216914
+publish_etc dev [σ], 0.002364
+publish_etc count, 8865
+register avg, 1.796997
+register dev [σ], 0.208396
+register count, 8865
+build_normals avg, 1.260214
+build_normals dev [σ], 0.013069
+build_normals count, 8865
+Registration avg, 3.480476
+Registration dev [σ], 0.340891
+Registration count, 8866
+compensate avg, 0.192713
+compensate dev [σ], 0.000205
+compensate count, 8865
+itrs avg, 4.049295
+itrs dev [σ], 0.050926
+itrs count, 8865
+Surface points avg, 150.228062
+Surface points dev [σ], 1515.213947
+Surface points count, 8866
+velocity avg, 4.074367
+velocity dev [σ], 8.743309
+velocity count, 8865
+Filtered points avg, 4763.104444
+Filtered points dev [σ], 3026.151510
+Filtered points count, 8866
+time-Filtering avg, 2.720256
+time-Filtering dev [σ], 0.122029
+time-Filtering count, 8866
+

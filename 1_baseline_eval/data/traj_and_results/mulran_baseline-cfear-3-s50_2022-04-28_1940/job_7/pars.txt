@@ -1,0 +1,78 @@
+range res, 0.0595238
+z min, 60
+min distance, 2.5
+max distance, 200
+k strongest, 40
+topic_filtered, /Navtech/Filtered
+radar_frameid, sensor_est
+dataset, mulran
+filter type, kstrong
+nb guard cells, 40
+window size, 1
+false alarm rate, 0.1
+input_points_topic, /Navtech/Filtered
+scan_registered_latest_topic, radar_registered
+scan_registered_keyframe_topic, radar_registered_keyframe
+odom_latest_topic, radar_odom
+odom_keyframe_topic, radar_odom_keyframe
+use raw pointcloud, false
+submap keyframes, 50
+resolution r,3
+resample factor f, 1
+min. sensor distance [m], 1.5
+min. sensor rot. [deg], 5
+use keyframe, true
+use initial guess, true
+radar reversed, true
+disable registration, false
+soft velocity constraint, false
+compensate, true
+cost type, P2P
+loss type, Cauchy
+loss limit, 0.100000
+covar scale, 1.000000
+regularization, 0.100000
+weight intensity, true
+publish_tf, true
+Weight, 4
+odom_est_topic, 
+gt_topic, 
+est_output_dir, /home/daniel/rosbag/CFEAR_EVAL/multi_2022-04-28_1703/mulran_baseline-cfear-3-s50_2022-04-28_1940/job_7/est/
+gt_output_dir, /home/daniel/rosbag/CFEAR_EVAL/multi_2022-04-28_1703/mulran_baseline-cfear-3-s50_2022-04-28_1940/job_7/gt/
+sequence, Riverside01
+job nr, 7
+save pcd, 0
+method, baseline-cfear-3-s50
+
+nr_frames, 2181
+publish_etc avg, 0.501907
+publish_etc dev [σ], 0.008997
+publish_etc count, 2214
+register avg, 151.276146
+register dev [σ], 3890.438947
+register count, 2214
+build_normals avg, 2.602542
+build_normals dev [σ], 0.198253
+build_normals count, 2214
+Registration avg, 154.688220
+Registration dev [σ], 3933.213779
+Registration count, 2215
+compensate avg, 0.349625
+compensate dev [σ], 0.003048
+compensate count, 2214
+itrs avg, 4.856820
+itrs dev [σ], 1.309671
+itrs count, 2214
+Surface points avg, 331.978330
+Surface points dev [σ], 4969.129101
+Surface points count, 2215
+velocity avg, 11.647162
+velocity dev [σ], 19.729770
+velocity count, 2214
+Filtered points avg, 8585.542664
+Filtered points dev [σ], 1996986.210257
+Filtered points count, 2215
+Filtering avg, 4.744582
+Filtering dev [σ], 0.477720
+Filtering count, 2215
+

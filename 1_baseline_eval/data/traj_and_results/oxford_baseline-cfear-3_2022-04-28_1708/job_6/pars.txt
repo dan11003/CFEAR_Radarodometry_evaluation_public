@@ -1,0 +1,78 @@
+range res, 0.0438
+z min, 60
+min distance, 2.5
+max distance, 200
+k strongest, 40
+topic_filtered, /Navtech/Filtered
+radar_frameid, sensor_est
+dataset, oxford
+filter type, kstrong
+nb guard cells, 40
+window size, 1
+false alarm rate, 1
+input_points_topic, /Navtech/Filtered
+scan_registered_latest_topic, radar_registered
+scan_registered_keyframe_topic, radar_registered_keyframe
+odom_latest_topic, radar_odom
+odom_keyframe_topic, radar_odom_keyframe
+use raw pointcloud, false
+submap keyframes, 4
+resolution r,3
+resample factor f, 1
+min. sensor distance [m], 1.5
+min. sensor rot. [deg], 5
+use keyframe, true
+use initial guess, true
+radar reversed, false
+disable registration, false
+soft velocity constraint, false
+compensate, true
+cost type, P2P
+loss type, Huber
+loss limit, 0.100000
+covar scale, 1.000000
+regularization, 1.000000
+weight intensity, true
+publish_tf, true
+Weight, 4
+odom_est_topic, 
+gt_topic, 
+est_output_dir, /home/daniel/rosbag/CFEAR_EVAL/multi_2022-04-28_1703/oxford_baseline-cfear-3_2022-04-28_1708/job_6/est/
+gt_output_dir, /home/daniel/rosbag/CFEAR_EVAL/multi_2022-04-28_1703/oxford_baseline-cfear-3_2022-04-28_1708/job_6/gt/
+sequence, 2019-01-16-11-53-11-radar-oxford-10k
+job nr, 6
+save pcd, 0
+method, baseline-cfear-3
+
+nr_frames, 7466
+publish_etc avg, 0.589404
+publish_etc dev [σ], 0.023615
+publish_etc count, 7466
+register avg, 14.480136
+register dev [σ], 27.672693
+register count, 7466
+build_normals avg, 3.837234
+build_normals dev [σ], 0.251396
+build_normals count, 7466
+Registration avg, 19.492264
+Registration dev [σ], 32.557453
+Registration count, 7467
+compensate avg, 0.544269
+compensate dev [σ], 0.003190
+compensate count, 7466
+itrs avg, 4.709751
+itrs dev [σ], 0.970269
+itrs count, 7466
+Surface points avg, 314.366814
+Surface points dev [σ], 6758.176818
+Surface points count, 7467
+velocity avg, 4.891442
+velocity dev [σ], 11.218510
+velocity count, 7466
+Filtered points avg, 13708.562475
+Filtered points dev [σ], 1893696.511799
+Filtered points count, 7467
+time-Filtering avg, 3.207876
+time-Filtering dev [σ], 0.218894
+time-Filtering count, 7467
+

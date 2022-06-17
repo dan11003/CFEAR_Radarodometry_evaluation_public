@@ -1,0 +1,78 @@
+range res, 0.0595238
+z min, 70
+min distance, 2.5
+max distance, 200
+k strongest, 12
+topic_filtered, /Navtech/Filtered
+radar_frameid, sensor_est
+dataset, mulran
+filter type, kstrong
+nb guard cells, 12
+window size, 1
+false alarm rate, 1
+input_points_topic, /Navtech/Filtered
+scan_registered_latest_topic, radar_registered
+scan_registered_keyframe_topic, radar_registered_keyframe
+odom_latest_topic, radar_odom
+odom_keyframe_topic, radar_odom_keyframe
+use raw pointcloud, false
+submap keyframes, 3
+resolution r,3.5
+resample factor f, 1
+min. sensor distance [m], 1.5
+min. sensor rot. [deg], 5
+use keyframe, true
+use initial guess, true
+radar reversed, true
+disable registration, false
+soft velocity constraint, false
+compensate, true
+cost type, P2L
+loss type, Huber
+loss limit, 0.100000
+covar scale, 1.000000
+regularization, 1.000000
+weight intensity, true
+publish_tf, true
+Weight, 4
+odom_est_topic, 
+gt_topic, 
+est_output_dir, /home/daniel/rosbag/CFEAR_EVAL/multi_2022-04-28_1703/mulran_baseline-cfear-2_2022-04-28_1855/job_6/est/
+gt_output_dir, /home/daniel/rosbag/CFEAR_EVAL/multi_2022-04-28_1703/mulran_baseline-cfear-2_2022-04-28_1855/job_6/gt/
+sequence, DCC03
+job nr, 6
+save pcd, 0
+method, baseline-cfear-2
+
+nr_frames, 2969
+publish_etc avg, 0.307065
+publish_etc dev [σ], 0.002632
+publish_etc count, 3001
+register avg, 5.955119
+register dev [σ], 1.537717
+register count, 3001
+build_normals avg, 1.177280
+build_normals dev [σ], 0.056817
+build_normals count, 3001
+Registration avg, 7.614317
+Registration dev [σ], 2.024332
+Registration count, 3002
+compensate avg, 0.164699
+compensate dev [σ], 0.000289
+compensate count, 3001
+itrs avg, 4.100966
+itrs dev [σ], 0.114098
+itrs count, 3001
+Surface points avg, 200.742505
+Surface points dev [σ], 1580.703516
+Surface points count, 3002
+velocity avg, 7.282379
+velocity dev [σ], 8.033031
+velocity count, 3001
+Filtered points avg, 4019.654564
+Filtered points dev [σ], 132362.476610
+Filtered points count, 3002
+Filtering avg, 3.192531
+Filtering dev [σ], 0.124985
+Filtering count, 3002
+

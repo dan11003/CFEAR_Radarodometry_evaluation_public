@@ -1,0 +1,78 @@
+range res, 0.0438
+z min, 60
+min distance, 2.5
+max distance, 200
+k strongest, 40
+topic_filtered, /Navtech/Filtered
+radar_frameid, sensor_est
+dataset, oxford
+filter type, kstrong
+nb guard cells, 40
+window size, 1
+false alarm rate, 0.1
+input_points_topic, /Navtech/Filtered
+scan_registered_latest_topic, radar_registered
+scan_registered_keyframe_topic, radar_registered_keyframe
+odom_latest_topic, radar_odom
+odom_keyframe_topic, radar_odom_keyframe
+use raw pointcloud, false
+submap keyframes, 50
+resolution r,3
+resample factor f, 1
+min. sensor distance [m], 1.5
+min. sensor rot. [deg], 5
+use keyframe, true
+use initial guess, true
+radar reversed, false
+disable registration, false
+soft velocity constraint, false
+compensate, true
+cost type, P2P
+loss type, Cauchy
+loss limit, 0.100000
+covar scale, 1.000000
+regularization, 0.100000
+weight intensity, true
+publish_tf, true
+Weight, 4
+odom_est_topic, 
+gt_topic, 
+est_output_dir, /home/daniel/rosbag/CFEAR_EVAL/multi_2022-04-28_1703/oxford_baseline-cfear-3-s50_2022-04-28_1804/job_4/est/
+gt_output_dir, /home/daniel/rosbag/CFEAR_EVAL/multi_2022-04-28_1703/oxford_baseline-cfear-3-s50_2022-04-28_1804/job_4/gt/
+sequence, 2019-01-18-14-14-42-radar-oxford-10k
+job nr, 4
+save pcd, 0
+method, baseline-cfear-3-s50
+
+nr_frames, 7402
+publish_etc avg, 0.563989
+publish_etc dev [σ], 0.015792
+publish_etc count, 7402
+register avg, 164.176714
+register dev [σ], 5814.983493
+register count, 7402
+build_normals avg, 3.928785
+build_normals dev [σ], 0.226787
+build_normals count, 7402
+Registration avg, 169.240294
+Registration dev [σ], 5865.797852
+Registration count, 7403
+compensate avg, 0.551562
+compensate dev [σ], 0.002668
+compensate count, 7402
+itrs avg, 4.810051
+itrs dev [σ], 1.220607
+itrs count, 7402
+Surface points avg, 320.474537
+Surface points dev [σ], 7778.796427
+Surface points count, 7403
+velocity avg, 4.865363
+velocity dev [σ], 11.040447
+velocity count, 7402
+Filtered points avg, 13828.499662
+Filtered points dev [σ], 1709173.723457
+Filtered points count, 7403
+time-Filtering avg, 2.749278
+time-Filtering dev [σ], 0.202257
+time-Filtering count, 7403
+
