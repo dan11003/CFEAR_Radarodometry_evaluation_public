@@ -2,20 +2,29 @@
 Evaluation of 
 [*Lidar-level localization with radar? The CFEAR approach to accurate, fast and robust large-scale radar odometry in diverse environments*](https://github.com/dan11003/CFEAR_Radarodometry)
 
-This repository contain python scripts for recreating all figures and tables in our paper. Here is a list between the folders within this repository and the content in the article.
+This repository contain python scripts for recreating all figures and tables in our paper. The main evaluation can be launched via:
+```
+jupyter-lab 1_baseline_eval/main_evaluation.ipynb
+```
+ jupyter-lab script_name e.g. j
+ Here is a list between the folders within this repository and the content in the article.
 
  * 1_baseline_eval/ => Tab. II,III, IV
- * 4_filter_eval/ => Fig. 8 & 9
- * 5_resolution_eval/ => Fig. 12 & 10
- * 6_submap_keyframes_eval => Fig. 11
- * 7_motion_comp_eval/ => Fig. 15
+ * 4_filter_eval/ => Fig. 7 & 8
+ * 5_resolution_eval/ => Fig. 10
+ * 6_submap_keyframes_eval => Fig. 9
+ * 7_motion_comp_eval/ => Fig. 11
  * 8_grid_search => Tab. III & IV 
- * 9_loss_function_eval => Fig. 13 & 14
- * 10_speed_acceleration => Fig. 17
- * 11_weights_eval => Fig. 18
- * 12_PathError_eval/ => Fig. 19 & 21
- * 13_map_trajectory_overlay/ => Fig 22a, 24a & 25a
- * 14_plotTrajectory/ => Fig 16 & 20
+ * 9_loss_function_eval => Fig. 12
+ * 10_speed_acceleration => Fig. 13
+ * 11_weights_eval => Fig. 14
+ * 12_PathError_eval/ => Fig. 16 & 18
+ * 13_map_trajectory_overlay/ => Fig 19a, 20a & 21a
+ * 14_plotTrajectory/ => Fig 15 & 17
+
+
+ * 14_plotTrajectory/data contain estimated trajectories using CFEAR-3 and CFEAR-3-s50
+ * 8_grid_search/data contain odometry results when varying feature extraction and matching parameters.
  
  
 
