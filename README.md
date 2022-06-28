@@ -1,4 +1,5 @@
 # CFEAR_evaluation
+
 Evaluation of 
 [*Lidar-level localization with radar? The CFEAR approach to accurate, fast and robust large-scale radar odometry in diverse environments*](https://github.com/dan11003/CFEAR_Radarodometry)
 
@@ -41,3 +42,7 @@ If you find our work useful, cite us with:
   doi={10.1109/IROS51168.2021.9636253}
   }
   ```
+
+## Authors
+	Daniel Adolfsson, Orebro University, Sweden
+	Daniel.adolfsson@oru.se
