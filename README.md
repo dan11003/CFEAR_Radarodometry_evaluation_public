@@ -2,13 +2,19 @@
 
 Evaluation of 
 [*Lidar-level localization with radar? The CFEAR approach to accurate, fast and robust large-scale radar odometry in diverse environments*](https://github.com/dan11003/CFEAR_Radarodometry)
+## Install
+pip install -r requirements.txt
+
+## Loading the evaluation
 
 This repository contain python scripts for recreating all figures and tables in our paper. The main evaluation can be launched via:
 ```
 jupyter-lab 1_baseline_eval/main_evaluation.ipynb
 ```
- jupyter-lab script_name e.g. j
- Here is a list between the folders within this repository and the content in the article.
+
+
+## Content
+Here is a list between the folders in this repository and the content in the article.
 
  * 1_baseline_eval/ => Tab. II,III, IV
  * 4_filter_eval/ => Fig. 7 & 8
